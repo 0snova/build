@@ -14,5 +14,8 @@
     "build:js": "babel src --extensions \".ts\" --out-dir dist",
     "build": "yarn clean && yarn build:types && yarn build:js",
     "release": "yarn build && node scripts/publish.js && cd dist && npm publish --access=public"
+  },
+  "dependencies": {
+    "minimatch": "^3.0.4"
   }
 }
