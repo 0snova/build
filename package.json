@@ -1,0 +1,32 @@
+{
+  "name": "osnova-build",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "Alexander Snov",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "lerna run build --parallel",
+    "prepare": "husky install"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-typescript": "^7.13.0",
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "husky": "^5.2.0",
+    "lerna": "^4.0.0",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1",
+    "shx": "^0.3.3",
+    "typescript": "^4.2.3"
+  }
+}

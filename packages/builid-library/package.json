@@ -1,0 +1,17 @@
+{
+  "name": "@osnova/build-library",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "author": "Alexander Snov",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "clean": "shx rm -rf dist",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "yarn type-check -- --watch",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "babel src --extensions \".ts\" --out-dir dist",
+    "build": "yarn clean && yarn build:types && yarn build:js",
+    "release": "yarn build && node scripts/publish.js && cd dist && npm publish --access=public"
+  }
+}
