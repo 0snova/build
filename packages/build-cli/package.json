@@ -1,6 +1,6 @@
 {
   "name": "@osnova/build-cli",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "main": "src/index.ts",
   "author": "Alexander Snov",
   "license": "MIT",
@@ -23,7 +23,7 @@
     "README.md"
   ],
   "devDependencies": {
-    "@osnova/build-library": "^0.1.1",
+    "@osnova/build-library": "^0.1.2",
     "@types/node": "^14.14.35"
   },
   "peerDependencies": {
